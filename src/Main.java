@@ -7,7 +7,6 @@ public class Main {
                 new Human("Катя", "Калининград", 1992,"продакт-менеджер"),
                 new Human("Артем", "Москва", 1995,"директор по развитию бизнеса")};
 
-
         Automobile[] automobiles = new Automobile[]{
                 new Automobile("Lada", "Granta", 1.7, "Жёлтый", 2015, "Россия"),
                 new Automobile("Audi", "A8 50 L TDI quattro", 3.0, "Чёрный ", 2020, "Германия"),
@@ -36,5 +35,5 @@ public class Main {
             System.out.println(automobile.toString());
         }
 
-
-    }}
+    }
+}
