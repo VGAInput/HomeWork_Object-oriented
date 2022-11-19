@@ -21,6 +21,7 @@ public class Human {
         this.yearOfBirth = Math.abs(yearOfBirth); //год рождения не может быть отрицательным
         this.jobTitle = jobTitle;
 
+
     }
 
     public String getName() {

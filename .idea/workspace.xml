@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d12de78d-8f8a-41de-bbcd-d39425b45134" name="Changes" comment="Домашняя работа: ООП">
-      <change afterPath="$PROJECT_DIR$/src/HomeWork_1/HW_1_Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/HomeWork_1/Human.java" afterDir="false" />
+    <list default="true" id="d12de78d-8f8a-41de-bbcd-d39425b45134" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/HomeWork_1/Flower.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HomeWork_1/Automobile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomeWork_1/transport/Automobile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HomeWork_1/HW_1_Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomeWork_1/HW_1_Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HomeWork_1/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomeWork_1/Human.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +23,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="homeWork" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -55,6 +56,11 @@
       <updated>1668518845662</updated>
       <workItem from="1668518848393" duration="1067000" />
       <workItem from="1668580387776" duration="7936000" />
+      <workItem from="1668612350416" duration="733000" />
+      <workItem from="1668613114688" duration="543000" />
+      <workItem from="1668782884279" duration="4273000" />
+      <workItem from="1668790089585" duration="2072000" />
+      <workItem from="1668857744078" duration="1435000" />
     </task>
     <task id="LOCAL-00001" summary="master">
       <created>1668519212784</created>
@@ -70,7 +76,21 @@
       <option name="project" value="LOCAL" />
       <updated>1668612162868</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Домашняя работа: ООП">
+      <created>1668612388653</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1668612388653</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Домашняя работа: ООП">
+      <created>1668612575221</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1668612575221</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
