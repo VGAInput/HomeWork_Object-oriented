@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d12de78d-8f8a-41de-bbcd-d39425b45134" name="Changes" comment="Домашняя работа: ООП - 3">
+    <list default="true" id="d12de78d-8f8a-41de-bbcd-d39425b45134" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/HomeWork_1/transport/Automobile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomeWork_1/transport/Automobile.java" afterDir="false" />
     </list>
@@ -60,6 +60,7 @@
       <workItem from="1668857744078" duration="1953000" />
       <workItem from="1669032254399" duration="593000" />
       <workItem from="1669179302401" duration="9915000" />
+      <workItem from="1669202951623" duration="287000" />
     </task>
     <task id="LOCAL-00001" summary="master">
       <created>1668519212784</created>
@@ -96,7 +97,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668859431559</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Домашняя работа: ООП - 3">
+      <created>1669203008222</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1669203008223</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -106,6 +114,7 @@
     <MESSAGE value="master" />
     <MESSAGE value="Домашняя работа: ООП" />
     <MESSAGE value="Домашняя работа: ООП - 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Домашняя работа: ООП - 2" />
+    <MESSAGE value="Домашняя работа: ООП - 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Домашняя работа: ООП - 3" />
   </component>
 </project>
