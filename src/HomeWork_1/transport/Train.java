@@ -1,6 +1,6 @@
 package HomeWork_1.transport;
 
-public class Train  extends Transport{
+public class Train extends Transport {
 
     private int tripPrice;
     private int tripTime;
@@ -9,7 +9,7 @@ public class Train  extends Transport{
     private int numberOfWagons;
 
     public Train(String brand, String model, int year, String country, String color, double topSpeed, int tripPrice,
-                 int tripTime, String departureStationName,String endStationName,int numberOfWagons) {
+                 int tripTime, String departureStationName, String endStationName, int numberOfWagons) {
         super(brand, model, year, country, color, topSpeed);
 
         setTripPrice(tripPrice);
@@ -22,10 +22,10 @@ public class Train  extends Transport{
 
     @Override
     public String toString() {
-        return "Поезд " + getModel() + ", Модель: " + getModel() + ", Год выпуска" +getYear()+
-                "В стране: " +getCountry() + ", скорость передвижения: " + getTopSpeed() +
+        return "Поезд " + getModel() + ", Модель: " + getModel() + ", Год выпуска" + getYear() +
+                "В стране: " + getCountry() + ", скорость передвижения: " + getTopSpeed() +
                 "км/ч, отходит от: " + departureStationName + ", до: " + endStationName + "." +
-                " Цена поездки: " + tripPrice+ " рублей, в поезде " + getNumberOfWagons() + " вагонов.";
+                " Цена поездки: " + tripPrice + " рублей, в поезде " + getNumberOfWagons() + " вагонов.";
     }
 
     public void setTripPrice(int tripPrice) {
@@ -38,6 +38,16 @@ public class Train  extends Transport{
 
     public void setDepartureStationName(String departureStationName) {
         this.departureStationName = departureStationName;
+    }
+
+    @Override
+    public void refill(int fuelType) {
+        switch (fuelType) {
+            case 0:
+                System.out.println("Поезд заправлен дизелем.");
+                break;
+        }
+
     }
 
     public void setEndStationName(String endStationName) {

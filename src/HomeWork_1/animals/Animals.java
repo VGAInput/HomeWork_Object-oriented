@@ -2,7 +2,6 @@ package HomeWork_1.animals;
 
 public abstract class Animals {
 
-
     private String petName;
     private int age;
     private String habitat;
@@ -32,14 +31,11 @@ public abstract class Animals {
     public Animals(String habitat, int speed) {
     }
 
-    public void eat() {
-    }
+    public abstract void eat();
 
-    public void sleep() {
-    }
+    public abstract void sleep();
 
-    public void move() {
-    }
+    public abstract void move();
 
     public String getPetName() {
         return petName;

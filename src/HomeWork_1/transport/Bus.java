@@ -1,16 +1,21 @@
 package HomeWork_1.transport;
 
-public class Bus  extends Transport{
+public class Bus extends Transport {
     public Bus(String brand, String model, int year, String country, String color, double topSpeed) {
         super(brand, model, year, country, color, topSpeed);
     }
 
     @Override
-    void refill(int fuelType) {
-        super.refill(fuelType);
+    public void refill(int fuelType) {
+        switch (fuelType) {
+            case 0:
+                System.out.println("Автобус заправлен дизелем");
+                break;
+            case 1:
+                System.out.println("Автобус заправлен бензином");
+                break;
+        }
     }
-
-
 
     public String toString() {
         return "Марка автобуса: " + getBrand() +

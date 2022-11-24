@@ -2,6 +2,7 @@ package HomeWork_1.transport;
 
 public abstract class Transport {
 
+    private int fuelType;
     private String brand;
     private String model;
     private final int year;
@@ -59,15 +60,7 @@ public abstract class Transport {
         return topSpeed;
     }
 
-    void refill(int fuelType){
-        switch (fuelType){
-            case 0: System.out.println("Машина заправлена бензином.");
-            break;
-            case 1: System.out.println("Машина заправлена дизелем.");
-            break;
-            case 2: System.out.println("Электробатарея машины заряжена.");
-            break;
-        }
-    };
+    public abstract void refill(int fuelType);
+
 
 }

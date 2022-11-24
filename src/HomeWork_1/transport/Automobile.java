@@ -2,38 +2,35 @@ package HomeWork_1.transport;
 
 public class Automobile extends Transport {
 
-    //private String model;
     private double engineVolume;
-    private String color;
-    //private int year;
-    private String country;
-
     private int gearBox;
     private String bodyType;
     private String regNumber;
     private int availableSeats;
 
-    private class Insurance{
+    private class Insurance {
         private int insuranceDuration;
         private int insurancePrice;
         private String insuranceNumber;
 
         public Insurance(int insuranceDuration, int insurancePrice, String insuranceNumber) {
 
-            if (insuranceDuration <= 0){
+            if (insuranceDuration <= 0) {
                 System.out.println("Нужно срочно ехать оформлять новую страховку!");
                 insuranceDuration = 0;
-            };
+            }
+            ;
             if (insurancePrice <= 0) insurancePrice = 0;
             if (insuranceNumber == null || insuranceNumber.equals("")
-            || insuranceNumber.length() != 9) insuranceNumber = "Номер страховки некорректный!";
+                    || insuranceNumber.length() != 9) insuranceNumber = "Номер страховки некорректный!";
 
             this.insuranceDuration = insuranceDuration;
             this.insurancePrice = insurancePrice;
             this.insuranceNumber = insuranceNumber;
         }
     }
-    private class Key{
+
+    private class Key {
         private boolean remoteIgnition;
         private boolean remoteKey;
 
@@ -45,9 +42,9 @@ public class Automobile extends Transport {
 
 
     public Automobile(String brand, String model, double engineVolume, String color, int year, String country,
-                      int gearBox,String bodyType,String regNumber,int availableSeats) {
+                      int gearBox, String bodyType, String regNumber, int availableSeats) {
 
-        super(brand,model,year,country,color,engineVolume);
+        super(brand, model, year, country, color, engineVolume);
 
         if (engineVolume <= 0) engineVolume = 1.5;
 
@@ -85,11 +82,23 @@ public class Automobile extends Transport {
         return availableSeats;
     }
 
-    private boolean tiresType(boolean isWinterTires){
+    private boolean tiresType(boolean isWinterTires) {
         return isWinterTires;
     }
+
+    @Override
     public void refill(int fuelType) {
-        super.refill(fuelType);
+        switch (fuelType) {
+            case 0:
+                System.out.println("Автомобиль заправлен дизелем");
+                break;
+            case 1:
+                System.out.println("Автомобиль заправлен бензином");
+                break;
+            case 2:
+                System.out.println("Электробатарея автомобиля заряжена");
+                break;
+        }
     }
 
     @Override
