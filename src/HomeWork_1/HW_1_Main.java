@@ -1,6 +1,8 @@
 package HomeWork_1;
 
+import HomeWork_1.animals.*;
 import HomeWork_1.transport.Automobile;
+import HomeWork_1.transport.Train;
 
 public class HW_1_Main {
     public static void main(String[] args) {
@@ -18,12 +20,27 @@ public class HW_1_Main {
                 new Automobile("Kia", "Sportage 4-го поколения", 2.4, "Красный", 2018, "Южная Корея",6,"Внедорожник","бо987к91",5),
                 new Automobile("Hyundai", "Avante", 1.6, "Оранжевый", 2016, "Южная Корея",6,"Седан","в236го78",5)};
 
+
+        automobiles[0].refill(0);
+        automobiles[0].refill(0);
+        automobiles[1].refill(1);
+
         Flower[] flowers = new Flower[]{
                 new Flower("Роза обыкновенная", "", "Голландия", 35.59, 3),
                 new Flower("Хризантема", "", "", 15, 5),
                 new Flower("Пион ", "", "Англия", 69.9, 1),
                 new Flower("Гипсофила ", "", "Турция", 19.5, 10)
         };
+
+        Train[] trains = new Train[]{
+                new Train("Ласточка","В-901",2011,"Россия",null,301.,3500,0,
+                        "Белорусский вокзал","Минск - пассажирский",11),
+                new Train("Ленинград","D-125",2019 ,"Россия",null,270,1700 ,0,
+                        "Ленинградский вокзал","Ленинград-Пассажирский",8)
+
+        };
+
+
         /*
         Напишите программу так, чтобы в консоль выводилось приветственное сообщение в формате:
         "Привет! Меня зовут… Я из города… Я родился в… году. Будем знакомы!" :
@@ -44,6 +61,10 @@ public class HW_1_Main {
         //       System.out.println(automobile.toString());
         //   }
 
+        for (Train train : trains) {
+            System.out.println(train.toString());
+        }
+
         Human Vladimir = new Human("Владимир", "Казань", 2001, null);
 
         /*
@@ -52,13 +73,32 @@ public class HW_1_Main {
         стоимостью и сроком стояния цветка.
         */
 
-        for (Flower flower : flowers) {
-            System.out.println(flower.getName() + ":" + " Страна-производитель: " + flower.getCountry() + ", цвет: " +
-                    flower.getFlowerColour() + ", стоимостью в " +
-                    +flower.getCost() + " рублей, срок стоянияй цветка: " + flower.getLifeSpan() + " д.");
-        }
+        //for (Flower flower : flowers) {
+        //    System.out.println(flower.getName() + ":" + " Страна-производитель: " + flower.getCountry() + ", цвет: " +
+        //            flower.getFlowerColour() + ", стоимостью в " +
+        //            +flower.getCost() + " рублей, срок стоянияй цветка: " + flower.getLifeSpan() + " д.");
+        //}
 
-        getBouqetStat(flowers);
+        //getBouqetStat(flowers);
+
+        Mammal gazelle =  new Mammal("Savanna", 4);
+        Mammal giraffe =  new Mammal("Savanna", 1);
+        Mammal horse =  new Mammal("Field", 2);
+
+        Carnivore hyenna = new Carnivore("Savanna",2);
+        Carnivore tiger = new Carnivore("Savanna",3);
+        Carnivore bear = new Carnivore("Forest",1);
+
+        Amphibian frog = new Amphibian("Swamp", 2);
+        Amphibian eel = new Amphibian("River", 3);
+
+        FlightlessBird peacock = new FlightlessBird("Jungle", 1);
+        FlightlessBird penguin = new FlightlessBird("Antarctic", 1);
+        FlightlessBird dodo = new FlightlessBird("Extinct", 1);
+
+        FlyingBird seagull = new FlyingBird("Seashore",5);
+        FlyingBird albatross = new FlyingBird("Seashore",5);
+        FlyingBird hawk = new FlyingBird("Mountan",5);
 
     }
 
