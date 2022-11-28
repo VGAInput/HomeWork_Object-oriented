@@ -1,9 +1,8 @@
 package HomeWork_1;
 
-import HomeWork_1.animals.*;
 import HomeWork_1.transport.*;
 
-import java.sql.Driver;
+import java.util.Collection;
 
 public class HW_1_Main {
     public static void main(String[] args) {
@@ -27,10 +26,22 @@ public class HW_1_Main {
                 new Truck("Kamaz","Continent",3.0),
         };
 
-        DriverClassB driver1 = new DriverClassB("Bill Johnson",5, true,cars[1]);
-        DriverClassC driver2 = new DriverClassC("Maria Clark",4, true,trucks[3]);
-        DriverClassD driver3 = new DriverClassD("John Williamson",2, true,buses[2]);
+       // LicenseClassB driver1 = new LicenseClassB("Bill Johnson",5, true,cars[1]);
+       // LicenseClassC driver2 = new LicenseClassC("Maria Clark",4, true,trucks[3]);
+       // LicenseClassD driver3 = new LicenseClassD("John Williamson",2, true,buses[2]);
 
+        Driver<LicenseClassB> driverTom = new Driver<>("Том",5,true);
+        Driver<LicenseClassC> driverMaria = new Driver<>("Мария",7,true);
+        Driver<LicenseClassD> driverNick = new Driver<>("Николай",4,true);
+
+        System.out.println("Водитель " + driverTom.getDriverName() + " управляет автомобилем " + cars[0].getBrand()
+                + " " + cars[0].getModel() + " и будет участвовать в заезде.");
+
+        System.out.println("Водитель " + driverMaria.getDriverName() + " управляет автомобилем " + trucks[0].getBrand()
+                + " " + trucks[0].getModel() + " и будет участвовать в заезде.");
+
+        System.out.println("Водитель " + driverNick.getDriverName() + " управляет автомобилем " + buses[0].getBrand()
+                + " " + buses[0].getModel() + " и будет участвовать в заезде.");
 
     }
 
