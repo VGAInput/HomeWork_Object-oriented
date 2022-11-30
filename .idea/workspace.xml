@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d12de78d-8f8a-41de-bbcd-d39425b45134" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/HomeWork_1/transport/DrivingLicense.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/HomeWork_1/transport/LicenseClassD.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/HomeWork_1/transport/Licensed.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HomeWork_1/transport/VehicleCategory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/HomeWork_1/HW_1_Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomeWork_1/HW_1_Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HomeWork_1/transport/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomeWork_1/transport/Driver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HomeWork_1/transport/DriverClassB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomeWork_1/transport/LicenseClassB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HomeWork_1/transport/DriverClassC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomeWork_1/transport/LicenseClassC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HomeWork_1/transport/Bus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomeWork_1/transport/Bus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HomeWork_1/transport/LightVehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomeWork_1/transport/LightVehicle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HomeWork_1/transport/Transport_racing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomeWork_1/transport/Transport_racing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HomeWork_1/transport/Truck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomeWork_1/transport/Truck.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,13 +20,14 @@
       <list>
         <option value="Class" />
         <option value="Interface" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="homeWork_OOP-3" />
+        <entry key="$PROJECT_DIR$" value="homeWork_OOP-4" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -78,7 +78,8 @@
       <workItem from="1669351808064" duration="1181000" />
       <workItem from="1669532041957" duration="4419000" />
       <workItem from="1669570621564" duration="5505000" />
-      <workItem from="1669643282864" duration="9825000" />
+      <workItem from="1669643282864" duration="10087000" />
+      <workItem from="1669787515467" duration="6656000" />
     </task>
     <task id="LOCAL-00001" summary="master">
       <created>1668519212784</created>
@@ -150,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669577032072</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Домашняя работа: ООП - 4 (Работа над ошибками №1)">
+      <created>1669653372511</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1669653372511</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,7 +171,8 @@
     <MESSAGE value="Домашняя работа: ООП - 3" />
     <MESSAGE value="Домашняя работа: ООП - 3 (Работа над ошибками #1)" />
     <MESSAGE value="Домашняя работа: ООП - 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Домашняя работа: ООП - 4" />
+    <MESSAGE value="Домашняя работа: ООП - 4 (Работа над ошибками №1)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Домашняя работа: ООП - 4 (Работа над ошибками №1)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
