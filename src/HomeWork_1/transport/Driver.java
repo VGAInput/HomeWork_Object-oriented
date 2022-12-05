@@ -1,6 +1,8 @@
 package HomeWork_1.transport;
 
-public class Driver <L extends DrivingLicense> {
+import java.lang.invoke.WrongMethodTypeException;
+
+public class Driver<L extends DrivingLicense> {
     private String driverName;
     private int experienceYears;
     private boolean isLicensed;
@@ -18,6 +20,13 @@ public class Driver <L extends DrivingLicense> {
 
     }
 
+    public Driver(String driverName, int experienceYears, DrivingLicense drivingLicense) {
+        this.driverName = driverName;
+        this.experienceYears = experienceYears;
+        drivingLicense.getLicenseType("");
+
+    }
+
     public void startMoving() {
         System.out.println("Водитель начал дижение.");
     }
@@ -28,6 +37,15 @@ public class Driver <L extends DrivingLicense> {
 
     public void refueling() {
         System.out.println("Водитель заправил бак.");
+    }
+
+    private void checkDrivingLicense(DrivingLicense drivingLicense) throws WrongMethodTypeException {
+        try {
+            if (drivingLicense.getLicense().isEmpty() || drivingLicense.getLicense().isBlank()) ;
+        } catch (WrongMethodTypeException wmte) {
+            System.out.println("Нет лицензии водителя!");
+        }
+
     }
 }
 
