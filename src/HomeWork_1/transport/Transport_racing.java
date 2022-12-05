@@ -1,5 +1,7 @@
 package HomeWork_1.transport;
 
+import java.lang.invoke.WrongMethodTypeException;
+
 public abstract class Transport_racing {
 
     private String brand;
@@ -7,7 +9,29 @@ public abstract class Transport_racing {
     private double engineVolume;
     VehicleCategory category;
 
-    public Transport_racing(String brand, String model, double engineVolume,VehicleCategory category) {
+    private boolean checkIfBusCategory(VehicleCategory category) throws WrongMethodTypeException {
+        if (category.equals(VehicleCategory.EXTRA_SMALL) ||
+                category.equals(VehicleCategory.SMALL) ||
+                category.equals(VehicleCategory.MEDIUM) ||
+                category.equals(VehicleCategory.LARGE) ||
+                category.equals(VehicleCategory.EXTRA_LARGE)) {
+            throw new WrongMethodTypeException();
+        }
+        System.out.println("Категория:" + category.categoryName);
+        return true;
+    }
+
+    public void makeDiagnosis(VehicleCategory category) throws WrongMethodTypeException {
+        try {
+            checkIfBusCategory(category);
+        } catch (WrongMethodTypeException wmte) {
+            System.out.println("Автобусы не проходят диагностику.");
+        } finally {
+            System.out.println("Диагностика пройдена.");
+        }
+    }
+
+    public Transport_racing(String brand, String model, double engineVolume, VehicleCategory category) {
 
         if (brand == null || brand.equals("")) brand = "default";
         if (model == null || model.equals("")) model = "default";
@@ -28,14 +52,15 @@ public abstract class Transport_racing {
     public void startMoving() {
     }
 
-    public void endMoving(){
+    public void endMoving() {
 
     }
-    public void getVehicleCategory(){
+
+    public void getVehicleCategory() {
         System.out.println(this.category.categoryName);
     }
 
-    public void determineVehicleCategory(String text){
+    public void determineVehicleCategory(String text) {
         System.out.println(text + category.categoryName);
     }
 

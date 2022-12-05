@@ -1,5 +1,7 @@
 package HomeWork_1.transport;
 
+import java.lang.invoke.WrongMethodTypeException;
+
 public class Truck extends Transport_racing implements Competing{
 
     public Truck(String brand, String model, double engineVolume,VehicleCategory category) {
@@ -9,6 +11,11 @@ public class Truck extends Transport_racing implements Competing{
     @Override
     public void getVehicleCategory() {
         super.getVehicleCategory();
+    }
+
+    @Override
+    public void makeDiagnosis(VehicleCategory category) throws WrongMethodTypeException {
+        super.makeDiagnosis(category);
     }
 
     @Override
