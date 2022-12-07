@@ -12,6 +12,11 @@ public class Bus extends Transport_racing implements Competing {
     }
 
     @Override
+    public void addSponsor(String name, int budget) {
+        super.addSponsor(name, budget);
+    }
+
+    @Override
     public void determineVehicleCategory(String text) {
         text = "Вместимость автобуса: ";
         super.determineVehicleCategory(text);

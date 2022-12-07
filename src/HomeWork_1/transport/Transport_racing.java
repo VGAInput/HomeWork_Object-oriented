@@ -1,6 +1,7 @@
 package HomeWork_1.transport;
 
 import java.lang.invoke.WrongMethodTypeException;
+import java.util.ArrayList;
 
 public abstract class Transport_racing {
 
@@ -8,6 +9,8 @@ public abstract class Transport_racing {
     private String model;
     private double engineVolume;
     VehicleCategory category;
+
+    private ArrayList<Sponsor>sponsors;
 
     private boolean checkIfBusCategory(VehicleCategory category) throws WrongMethodTypeException {
         if (category.equals(VehicleCategory.EXTRA_SMALL) ||
@@ -19,6 +22,10 @@ public abstract class Transport_racing {
         }
         System.out.println("Категория:" + category.categoryName);
         return true;
+    }
+
+    public void addSponsor(String name, int budget){
+        sponsors.add(new Sponsor(name,budget));
     }
 
     public void makeDiagnosis(VehicleCategory category) throws WrongMethodTypeException {
@@ -43,6 +50,7 @@ public abstract class Transport_racing {
         this.engineVolume = engineVolume;
         this.category = category;
 
+        sponsors = new ArrayList<>();
     }
 
     public void setSetVehicleCategory(VehicleCategory category) {

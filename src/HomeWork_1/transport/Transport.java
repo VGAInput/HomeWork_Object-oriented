@@ -1,5 +1,7 @@
 package HomeWork_1.transport;
 
+import java.util.ArrayList;
+
 public abstract class Transport {
 
     private int fuelType;
@@ -17,7 +19,6 @@ public abstract class Transport {
         if (country == null || country.equals("")) country = "default";
         if (color == null || color.equals("")) color = "Белый";
         if (year <= 0) year = 2000;
-
 
         this.brand = brand;
         this.model = model;

@@ -10,6 +10,11 @@ public class LightVehicle extends Transport_racing implements Competing {
     }
 
     @Override
+    public void addSponsor(String name, int budget) {
+        super.addSponsor(name, budget);
+    }
+
+    @Override
     public void makeDiagnosis(VehicleCategory category) throws WrongMethodTypeException {
         super.makeDiagnosis(category);
     }
