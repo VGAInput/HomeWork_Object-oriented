@@ -26,6 +26,9 @@ public class Driver<L extends DrivingLicense> {
         drivingLicense.getLicenseType("");
 
     }
+    public String getName(){
+        return driverName;
+    }
 
     public void startMoving() {
         System.out.println("Водитель начал дижение.");

@@ -19,6 +19,11 @@ public class Truck extends Transport_racing implements Competing{
     }
 
     @Override
+    public void addSponsor(String name, int budget) {
+        super.addSponsor(name, budget);
+    }
+
+    @Override
     public void determineVehicleCategory(String text) {
         text = "Грузоподъёмность грузовика: ";
         super.determineVehicleCategory(text);
