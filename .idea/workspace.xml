@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d12de78d-8f8a-41de-bbcd-d39425b45134" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/HomeWork_1/transport/Mechanic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/HomeWork_1/transport/ServiceStation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/HomeWork_1/transport/Sponsor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HomeWork_1/ListOfProducts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HomeWork_1/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HomeWork_1/Recipe.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HomeWork_1/HW_1_Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomeWork_1/HW_1_Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HomeWork_1/transport/Bus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomeWork_1/transport/Bus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HomeWork_1/transport/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomeWork_1/transport/Driver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HomeWork_1/transport/LightVehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomeWork_1/transport/LightVehicle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HomeWork_1/transport/Transport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomeWork_1/transport/Transport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HomeWork_1/transport/Transport_racing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomeWork_1/transport/Transport_racing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HomeWork_1/transport/Truck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomeWork_1/transport/Truck.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +82,10 @@
       <workItem from="1670062284181" duration="2484000" />
       <workItem from="1670219782903" duration="3341000" />
       <workItem from="1670399668128" duration="4904000" />
-      <workItem from="1670432382008" duration="4780000" />
+      <workItem from="1670432382008" duration="4903000" />
+      <workItem from="1670515790437" duration="1002000" />
+      <workItem from="1670516854712" duration="1701000" />
+      <workItem from="1670787706083" duration="4255000" />
     </task>
     <task id="LOCAL-00001" summary="master">
       <created>1668519212784</created>
@@ -189,7 +185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670223048164</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Домашняя работа: ООП - 7">
+      <created>1670438332881</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1670438332881</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,7 +208,8 @@
     <MESSAGE value="Домашняя работа: ООП - 4 (Работа над ошибками №1)" />
     <MESSAGE value="Домашняя работа: ООП - 5" />
     <MESSAGE value="Домашняя работа: ООП - 6" />
-    <option name="LAST_COMMIT_MESSAGE" value="Домашняя работа: ООП - 6" />
+    <MESSAGE value="Домашняя работа: ООП - 7" />
+    <option name="LAST_COMMIT_MESSAGE" value="Домашняя работа: ООП - 7" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
