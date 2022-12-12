@@ -1,11 +1,10 @@
 package HomeWork_1.transport;
 
-public class Mechanic {
+import java.util.Objects;
 
+public class Mechanic {
     String name;
     String company;
-
-
     public Mechanic(String name, String company) {
         this.name = name;
         this.company = company;
@@ -36,5 +35,18 @@ public class Mechanic {
 
     public void fixVehicle(Truck truck) {
         System.out.println(truck.getBrand() + " " + truck.getModel() + " is fixed.");
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Mechanic mechanic = (Mechanic) o;
+        return Objects.equals(name, mechanic.name) && Objects.equals(company, mechanic.company);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, company);
     }
 }

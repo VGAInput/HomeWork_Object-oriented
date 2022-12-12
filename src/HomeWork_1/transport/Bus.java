@@ -1,9 +1,20 @@
 package HomeWork_1.transport;
 
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
+
 public class Bus extends Transport_racing implements Competing {
 
-    public Bus(String brand, String model, double engineVolume,VehicleCategory category) {
+    private final Set<Mechanic>mechanics;
+
+    public Bus(String brand, String model, double engineVolume,VehicleCategory category,Mechanic mechanic) {
         super(brand, model, engineVolume,category);
+        this.mechanics = new HashSet<>(Arrays.asList(mechanic));
+    }
+
+    public Set<Mechanic>getMechanics(){
+        return mechanics;
     }
 
     @Override
