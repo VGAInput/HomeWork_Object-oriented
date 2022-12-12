@@ -39,4 +39,11 @@ public class Recipe {
     public int hashCode() {
         return Objects.hash(products, totalPrice, recipeName);
     }
+
+    @Override
+    public String toString() {
+        return "Recipe{" +
+                "recipeName='" + recipeName + '\'' +
+                '}';
+    }
 }

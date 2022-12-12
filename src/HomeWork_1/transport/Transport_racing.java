@@ -1,7 +1,8 @@
 package HomeWork_1.transport;
 
 import java.lang.invoke.WrongMethodTypeException;
-import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Set;
 
 public abstract class Transport_racing {
 
@@ -10,7 +11,7 @@ public abstract class Transport_racing {
     private double engineVolume;
     VehicleCategory category;
 
-    private ArrayList<Sponsor>sponsors;
+    private Set<Sponsor> sponsors;
 
     private boolean checkIfBusCategory(VehicleCategory category) throws WrongMethodTypeException {
         if (category.equals(VehicleCategory.EXTRA_SMALL) ||
@@ -22,6 +23,17 @@ public abstract class Transport_racing {
         }
         System.out.println("Категория:" + category.categoryName);
         return true;
+    }
+
+    @Override
+    public String toString() {
+        return "Transport_racing{" +
+                "brand='" + brand + '\'' +
+                ", model='" + model + '\'' +
+                ", engineVolume=" + engineVolume +
+                ", category=" + category +
+                ", sponsors=" + sponsors +
+                '}';
     }
 
     public void addSponsor(String name, int budget){
@@ -50,7 +62,7 @@ public abstract class Transport_racing {
         this.engineVolume = engineVolume;
         this.category = category;
 
-        sponsors = new ArrayList<>();
+        sponsors = new HashSet<>( );
     }
 
     public void setSetVehicleCategory(VehicleCategory category) {
